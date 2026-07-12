@@ -8,15 +8,14 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
   <display-name>Archetype Created Web Application</display-name>
   
-  <servlet>
-  <servlet-name>updateServlet</servlet-name>
-  <servlet-class>ServletController.updateServlet</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>updateServlet</servlet-name>
-    <url-pattern>/requestUpload</url-pattern>
-  </servlet-mapping>
+ <servlet>
+<servlet-name>RegisterCustomer</servlet-name>
+<servlet-class>ServletControllerCustomer.RegisterCustomer</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>RegisterCustomer</servlet-name>
+<url-pattern>/requestUpload</url-pattern>
+</servlet-mapping>
   
   
   
@@ -41,7 +40,16 @@
      <servlet-name>ViewAllProductServlet</servlet-name>
      <url-pattern>/getAllProduct</url-pattern>
   </servlet-mapping>
-  
+
+ <servlet>
+     <servlet-name>GetCustomer</servlet-name>
+    <servlet-class>ServletControllerCustomer.GetCustomer</servlet-class>
+</servlet>
+    
+<servlet-mapping>
+           <servlet-name>GetCustomer</servlet-name>
+              <url-pattern>/Customers</url-pattern>
+</servlet-mapping>
   
   
   

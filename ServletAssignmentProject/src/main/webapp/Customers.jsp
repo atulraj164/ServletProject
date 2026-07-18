@@ -68,6 +68,11 @@ tr:hover{
 </tr>
 
 <%
+
+if (session.getAttribute("sessionid") == null) {
+    response.sendRedirect("index.jsp");
+}	
+
 List<Customer> list = (List<Customer>)request.getAttribute("Customer");
 
 for(Customer c : list){
